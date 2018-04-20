@@ -2,4 +2,6 @@ git add .
 
 git commit -m "$1"
 
-git push -u origin master
+if [ "$2"]; then
+	git push -u origin master
+fi
